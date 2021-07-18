@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
+    cardbg:{
+      padding: '80px 60px',
+      margin: '60px 30px' ,
+      color: "white",
+    }
   }));
 
 export default useStyles
