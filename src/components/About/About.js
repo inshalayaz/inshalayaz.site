@@ -5,6 +5,7 @@ import useStyles from './Style'
 import Img from '../../assets/avatar-2.svg'
 import Chart from './Chart/Chart'
 import File from '../../assets/INSHAL CV UPDATED.pdf'
+import StatsCounter from './Counter/Counter'
 
 
 function About() {
@@ -23,7 +24,7 @@ function About() {
             </Grid>
             <Grid item xs={12} sm={9}>
                 {/* Internal Grid For two sections within it */}
-                <Grid container spacing={0}>
+                <Grid container spacing={2}>
                     <Grid item xs={12} sm={6}>
                         <Paper className={classes.paper}>
                             <Typography variant='p' >
@@ -42,8 +43,10 @@ function About() {
                     </Grid>
                 </Grid>
                 {/* Internal Grids end */}
+                {/* <Counter /> */}
+                </Grid>
             </Grid>
-          </Grid>
+            <StatsCounter />
         </div>
       );
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
 const data = {
-  labels: ['React', 'Node', 'Pen Testing', 'WordPress', 'SEO', 'Linux'],
+  labels: ['React.js', 'Node.js', 'Pen Testing', 'WordPress', 'SEO', 'Linux'],
   datasets: [
     {
-      label: 'Rating From 10',
+      label: 'Out of 10',
       data: [7, 5, 6, 10, 8, 7],
       backgroundColor: [
         'rgb(255,209,92)',
