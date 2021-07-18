@@ -11,7 +11,7 @@ import StatsCounter from './Counter/Counter'
 function About() {
     const classes = useStyles()
     return (
-        <div className={classes.root} >
+        <div className={classes.root} id="about" >
           <Grid container spacing={2} >
             
             <Grid item xs={12} sm={3}>

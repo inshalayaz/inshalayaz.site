@@ -14,7 +14,7 @@ export default function NavBar() {
   
     return (
       <div className={classes.root}>
-        <AppBar position="static" className={classes.appbar}>
+        <AppBar position="fixed" className={classes.appbar}>
             <Toolbar>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     <img src={Logo}  style={{height: "70px", borderRadius:"50%" }} alt="Inshal"/>

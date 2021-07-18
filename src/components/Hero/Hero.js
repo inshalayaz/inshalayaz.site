@@ -15,7 +15,7 @@ function Hero() {
     const classes = useStyles();
 
   return (
-    <div className={classes.root} >
+    <div className={classes.root} id="home">
         <Grid container spacing={3} >
             <Grid item xs={12}>
                 <img src={Img} alt="Inshal" className={classes.img} />
@@ -40,7 +40,7 @@ function Hero() {
                     </Typography>
                     <br />
                     <Button>
-                        <ArrowDropDownIcon style={{color: "white"}} variant="contained" />
+                        <a href="#about"><ArrowDropDownIcon style={{color: "white"}} variant="contained" /> </a>
                     </Button>
                     
                 </Grid>

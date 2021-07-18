@@ -3,14 +3,14 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-       paddingTop: "10px",
+       paddingTop: "120px",
       color: "white"
     },
     text: {
         color: "white",
     },
     img: {
-        height: "280px",
+        height: "230px",
         borderRadius: "50%",
   
     },
