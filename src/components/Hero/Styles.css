@@ -2,3 +2,7 @@ a :hover{
     transition: all .5s;
     color: #fcbf0d;
 }
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2{
+    width: 100%!important;
+}

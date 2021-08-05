@@ -15,7 +15,7 @@ function Services() {
 
     return (
         <div className={classes.root} id='service'>
-          <Grid container spacing={3}>
+          <Grid container spacing={2}>
             {
               Data.map( n =>(
                 <ServiceCard key={n.key} Img={n.Img.default} Alt={n.Alt} Title={n.Title} Description={n.Description} BgColor={n.BgColor} textColor={n.textColor} />

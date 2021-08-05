@@ -17,8 +17,8 @@ function Hero() {
 
   return (
     <div className={classes.root} id="home">
-        <Grid container spacing={3} >
-            <Grid item xs={12}>
+        <Grid container spacing={2} >
+            <Grid item xs={12}  >
                 <img src={Img} alt="Inshal" className={classes.img} />
                 <Typography variant="h4" className={classes.text}> Inshal Ayaz  </Typography>
                 {/* <Typography variant="subtitle" className={classes.text}>  </Typography> */}
