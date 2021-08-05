@@ -5,6 +5,7 @@ import Img from "../../assets/My Picture.JPG"
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Typical from 'react-typical'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { Link } from 'react-scroll'
 
 
 import useStyles from './Style';
@@ -40,7 +41,7 @@ function Hero() {
                     </Typography>
                     <br />
                     <Button>
-                        <a href="#about"><ArrowDropDownIcon style={{color: "white"}} variant="contained" /> </a>
+                        <Link to="about" spy={true} smooth={true} offset={50} duration={500}><ArrowDropDownIcon style={{color: "white"}} variant="contained" /> </Link>
                     </Button>
                     
                 </Grid>

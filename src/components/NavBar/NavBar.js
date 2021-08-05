@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-scroll'
 import "./Style.css"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -22,11 +22,11 @@ export default function NavBar() {
                 <Typography variant="h6" className={classes.title}>
                     Hire Me As A Developer Or A H@cker
                 </Typography>
-                <a href="#home"><Button color="inherit" >Home</Button></a>
-                <a href="#about"><Button color="inherit">About</Button></a>
-                <a href="#services"><Button color="inherit">Services</Button></a>
-                <a href="work"><Button color="inherit">Work</Button></a>
-                <a href="contact"><Button color="inherit">Contact</Button></a>
+                <Link to="home" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit" >Home</Button></Link>
+                <Link to="about" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">About</Button></Link>
+                <Link to="services" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">Services</Button></Link>
+                <Link to="work" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">Work</Button></Link>
+                <Link to="contact" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">Contact</Button></Link>
             </Toolbar>
         </AppBar>
       </div>
