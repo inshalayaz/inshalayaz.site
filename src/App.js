@@ -5,13 +5,14 @@ import NavBar from './components/NavBar/NavBar'
 import Services from './components/Services/Services';
 
 
+
 function App() {
   return (
     <div className="App" style={{backgroundColor: "#353353"}}>
       <NavBar />
       <Hero />
-      <About />
-      <Services />
+      <About  />
+      <Services/>
     </div>
   );
 }
