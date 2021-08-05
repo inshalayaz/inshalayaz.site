@@ -14,7 +14,7 @@ function Services() {
   
 
     return (
-        <div className={classes.root} id='service'>
+        <div className={classes.root} id='services'>
           <Grid container spacing={2}>
             {
               Data.map( n =>(

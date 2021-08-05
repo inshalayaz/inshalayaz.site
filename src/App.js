@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About/About';
+import Experience from './components/Experience/Experience';
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar'
 import Services from './components/Services/Services';
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <About  />
       <Services/>
+      <Experience />
     </div>
   );
 }

@@ -22,11 +22,12 @@ export default function NavBar() {
                 <Typography variant="h6" className={classes.title}>
                     Hire Me As A Developer Or A H@cker
                 </Typography>
-                <Link to="home" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit" >Home</Button></Link>
-                <Link to="about" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">About</Button></Link>
-                <Link to="services" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">Services</Button></Link>
-                <Link to="work" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">Work</Button></Link>
-                <Link to="contact" spy={true} smooth={true} offset={50} duration={500}><Button color="inherit">Contact</Button></Link>
+                <Link to="home" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit" >Home</Button></Link>
+                <Link to="about" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">About</Button></Link>
+                <Link to="services" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Services</Button></Link>
+                <Link to="experience" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Experience</Button></Link>
+                <Link to="work" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Work</Button></Link>
+                <Link to="contact" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Contact</Button></Link>
             </Toolbar>
         </AppBar>
       </div>
