@@ -31,7 +31,7 @@ function About() {
                             I am Inshal Ayaz, web developer from Karachi, Pakistan. I have rich experience in web site design and building and customization, also I am good at WordPress and Web Penetration Testing.
                             </Typography>
                             <br />
-                            <a href={File} download style={{}}>
+                            <a href={File}>
                                 <Button color="primary" variant="contained" className={classes.btn}>Download CV</Button>
                             </a>
                         </Paper>

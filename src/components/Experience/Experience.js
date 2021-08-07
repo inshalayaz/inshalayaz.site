@@ -11,7 +11,7 @@ export default function Experience() {
 
   return (
     <div className={classes.root} id='experience'>
-      <Grid container spacing={3} alignItems="center" alignContent="center" >
+      <Grid container spacing={3} >
         <Grid item xs={6}>
           <Paper className={classes.paper}>
               {

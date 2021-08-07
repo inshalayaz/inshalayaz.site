@@ -21,7 +21,7 @@ const Data = [
         key: 3,
         Img: require('../../assets/seo.svg'),
         Alt: "SEO",
-        Title: "SEO",
+        Title: "The SEO Expert",
         Description: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
         BgColor:'#f92c60',
         textColor:'#fff'

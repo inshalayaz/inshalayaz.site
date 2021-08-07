@@ -25,7 +25,7 @@ export const Data2 = [
     {
     id: 1,
     year: '2019',
-    work: 'Web Designer',
+    work: 'Web Developer',
     desc: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
     icon: false
 },
@@ -39,7 +39,7 @@ export const Data2 = [
 {
     id: 3,
     year: '2021',
-    work: 'Web Developer/Ethical Hacker',
+    work: 'Ethical Hacker',
     desc: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
     icon: false
 },

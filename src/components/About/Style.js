@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: 'white',
       backgroundColor: "#353353",
+      boxShadow:'none'
       
     },
     btn: {

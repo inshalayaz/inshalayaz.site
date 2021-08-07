@@ -7,31 +7,32 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
       transition: "all 0.3s ease-in-out",
-      
+      borderRadius:"20px",
       '&:hover': {
-        padding:"100px 80px",
         transition: "all 0.3s ease-in-out",
+        transform: "translateY(-10px)"
       }
     },
     cardbg:{
-      padding: '80px 60px',
-      margin: '60px 30px' ,
+      padding: '30px 40px',
+      margin: '30px 80px' ,
       color: "white",
-      height: '300px',
+      // height: '200px',
       marginBottom: '30px',
       "@media screen and (max-width: 1000px)": {
         margin: '0px 0px',
-        padding: '40px 30px'
+        padding: '40px 30px',
       }
     
 
     },
     title: {
-      marginTop: '30px',
-      marginBottom: '30px',
+      marginTop: '10px',
+      fontSize:"30px",
+      marginBottom: '10px',
       textAlign: 'center',
       "@media screen and (max-width: 1000px)": {
-        fontSize: '23px'
+        fontSize: '18px'
       }
     },
     txt: {
