@@ -25,7 +25,7 @@ function Hero() {
                 <Typical steps={['Hello',3000,'I\'m a Front End Developer',1000,'I\'m an Ethical Hacker', 300]} loop={Infinity} wrapper="p" />
             </Grid>
                 
-                <Grid item xs={12} className={classes.social}>
+                <Grid item xs={12} className={classes.social} id="about">
                     <a href="https://github.com/inshalayaz"><GitHubIcon  fontSize="medium" /></a>
                     <a href="https://twitter.com/ayaz_inshal"><Twitter fontSize="medium"/></a>
                     <a href="https://www.facebook.com/inshal.ayaz"><Facebook fontSize="medium" /></a>
