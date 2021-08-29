@@ -15,7 +15,7 @@ export default function Experience() {
       <Grid container spacing={3} >
       <Grid item xs={12} sm={12}>
             <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
-                        Services
+                        Experience
             </Typography>
             </Grid>
         <Grid item xs={6}>
