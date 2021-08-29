@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grid} from '@material-ui/core'
+import {Grid, Typography} from '@material-ui/core'
 import useStyles from './Style'
 // import WebDev from '../../assets/service-2.svg'
 // import SEO from '../../assets/seo.svg'
@@ -16,6 +16,11 @@ function Services() {
     return (
         <div className={classes.root} id='services' >
           <Grid container spacing={2}>
+          <Grid item xs={12} sm={12}>
+            <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
+                        Services
+            </Typography>
+            </Grid>
             {
               Data.map( n =>(
                 <ServiceCard key={n.key} Img={n.Img.default} Alt={n.Alt} Title={n.Title} Description={n.Description} BgColor={n.BgColor} textColor={n.textColor} />
