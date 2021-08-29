@@ -2,7 +2,7 @@ import styled from 'styled-components'
  import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#fff' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? 'rgba(255,255,255,0.1)' : 'transparent')};
     height: 80px;
      margin-top: -80px;
     display: flex;
@@ -72,7 +72,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: white;
     display: flex;
     align-items: center;
     text-decoration: none;

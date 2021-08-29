@@ -27,7 +27,7 @@ function StatsCounter() {
                         </Paper>
                     </Grid>
             <Grid item xs={12} sm={4}>
-                        <Paper className={classes.paper} id="services">
+                        <Paper className={classes.paper}>
                             <Typography variant='h4'> 
                                 <GroupIcon color='secondary' fontSize='large' /> <CountUp prefix="Satisfied Clients " delay={1} duration={5} end={11} />
                             </Typography>

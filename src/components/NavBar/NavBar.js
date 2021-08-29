@@ -34,16 +34,22 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" >About</NavLinks>
+                                <NavLinks to="home" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav} >Home</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="discover" smooth={true} duration={500} spy={true} exact="true">Discover</NavLinks>
+                                <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav} >About</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true">Services</NavLinks>
+                                <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav}>Services</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="signup" smooth={true} duration={500} spy={true} exact="true">Sign Up</NavLinks>
+                                <NavLinks to="experience" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav}>Experience</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="work" smooth={true} duration={500} spy={true} exact="true">Work</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="contact" smooth={true} duration={500} spy={true} exact="true">Contact</NavLinks>
                             </NavItem>
                         </NavMenu>
                        
