@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      marginTop: "100px",
+      marginTop: "150px",
       marginBottom: "100px"
     },
     paper: {
@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     btn: {
         marginTop: '20px'
     },
-
+   
+   
 
     
   }));
