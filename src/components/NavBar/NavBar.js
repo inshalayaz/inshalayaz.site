@@ -1,35 +1,57 @@
-import React from 'react';
-import { Link } from 'react-scroll'
-import "./Style.css"
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import useStyles from './Style'
+import React, { useEffect, useState} from 'react'
+import {Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem,NavLinks } from './NavbarElements'
+import { FaBars } from 'react-icons/fa'
 import Logo from '../../assets/My Picture.JPG'
 
-export default function NavBar() {
-    const classes = useStyles();
-  
+
+
+const Navbar = ({ toggle }) => {
+
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+            setScrollNav(true)
+        }else{
+            setScrollNav(false)
+        }
+    }
+
+   useEffect(()=>{
+       window.addEventListener('scroll', changeNav)
+    changeNav()
+   },[])
+
     return (
-      <div className={classes.root}>
-        <AppBar position="fixed" className={classes.appbar}>
-            <Toolbar>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                    <img src={Logo}  style={{height: "70px", borderRadius:"50%" }} alt="Inshal"/>
-                </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                    Hire Me As A Developer Or A H@cker
-                </Typography>
-                <Link to="home" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit" >Home</Button></Link>
-                <Link to="about" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">About</Button></Link>
-                <Link to="services" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Services</Button></Link>
-                <Link to="experience" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Experience</Button></Link>
-                <Link to="work" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Work</Button></Link>
-                <Link to="contact" spy={true} smooth={true} offset={50} duration={800}><Button color="inherit">Contact</Button></Link>
-            </Toolbar>
-        </AppBar>
-      </div>
-    );
-  }
+        <>
+            <Nav scrollNav={scrollNav}>
+                <NavbarContainer>
+                    <NavLogo to='/' >
+                        <img src={Logo} alt="Logo" style={{height: "70px", borderRadius:"50%" }}/>
+                    </NavLogo>
+                    <MobileIcon onClick={toggle} >
+                        <FaBars />
+                    </MobileIcon>
+                        <NavMenu>
+                            <NavItem>
+                                <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" >About</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="discover" smooth={true} duration={500} spy={true} exact="true">Discover</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true">Services</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="signup" smooth={true} duration={500} spy={true} exact="true">Sign Up</NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                       
+                        
+                </NavbarContainer>
+            </Nav>
+        </>
+    )
+}
+
+export default Navbar
