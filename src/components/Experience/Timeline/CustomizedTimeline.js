@@ -17,7 +17,7 @@ export default function CustomizedTimeline({year,work,desc,icon}) {
   const classes = useStyles();
 
   return (
-    <Timeline align="alternate">
+    <Timeline>
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" style={{color: '#fff'}}>
@@ -39,43 +39,6 @@ export default function CustomizedTimeline({year,work,desc,icon}) {
           </Paper>
         </TimelineContent>
       </TimelineItem>
-      {/* <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            2017-2019
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="primary">
-            <LaptopMacIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              College
-            </Typography>
-            <Typography>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
-          </TimelineDot>
-          <TimelineConnector className={classes.secondaryTail} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              University
-            </Typography>
-            <Typography>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem> */}
-    </Timeline>
+          </Timeline>
   );
 }

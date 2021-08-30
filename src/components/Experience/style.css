@@ -1,3 +1,9 @@
 .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3{
     width:100%
 }
+@media screen and (max-width: 768px){
+    .MuiPaper-root.makeStyles-paper-17.MuiPaper-elevation1.MuiPaper-rounded{
+        box-shadow: none;
+        padding: 0;
+    }
+}

@@ -18,7 +18,7 @@ export default function Experience() {
                         Experience
             </Typography>
             </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6} md={6}>
           <Paper className={classes.paper}>
               {
                   Data1.map( n =>(
@@ -27,7 +27,7 @@ export default function Experience() {
               }
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6} md={6}>
           <Paper className={classes.paper}>
           {
                   Data2.map( n =>(
