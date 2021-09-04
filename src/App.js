@@ -6,6 +6,8 @@ import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
 import { useState } from 'react';
 import SideBar from './components/SideBar/SideBar'
+import Works from './components/Works/Works';
+
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
       <About  />
       <Services/>
       <Experience />
+      <Works />
     </div>
   );
 }
