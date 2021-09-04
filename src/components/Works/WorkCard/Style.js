@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
         padding: '60px 0px',
@@ -11,6 +11,17 @@ const useStyles = makeStyles({
     media: {
       height: 140,
     },
+    modal: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      paper: {
+        backgroundColor: theme.palette.background.paper,
+        border: '2px solid #000',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+      },
     overlay: {
         background: 'rgba(112,30,186,0.6)',
         position: 'absolute',
@@ -20,7 +31,7 @@ const useStyles = makeStyles({
         width:'100%',
         transition:'linear all 0.2s',
         padding: '10px',
-        
+        cursor: 'pointer',
         '&:hover':{
             transition:'linear all 0.2s',
         }
@@ -35,6 +46,6 @@ const useStyles = makeStyles({
         pointerEvents: 'none'
     }
 
-  });
+}));
 
-  export default useStyles
+export default useStyles
