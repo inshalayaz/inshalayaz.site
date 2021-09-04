@@ -21,7 +21,7 @@ const WorkCard = () => {
         <div className={hover? classes.overlay : ''}>
           {
             hover?
-            <Typography variant='h3' align='left' className={classes.overlayHeading} >Project Name</Typography>
+            <Typography variant='h3' align='left' className={[classes.overlayHeading, classes.noHover]} >Project Name</Typography>
             : ''
           }
         </div>
