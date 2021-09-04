@@ -4,9 +4,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Work1 from '../../../assets/work-1.svg'
 import useStyles from './Style';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+import ImageModal from './ImageModal/ImageModal';
+// import Modal from '@material-ui/core/Modal';
+// import Backdrop from '@material-ui/core/Backdrop';
+// import Fade from '@material-ui/core/Fade';
 
 const WorkCard = () => {
   const [hover,isHovered] = useState(false)
@@ -30,6 +31,7 @@ const WorkCard = () => {
             title="Contemplative Reptile"
           />
         {/* </CardActionArea> */}
+        {/* <div className={hover? classes.overlay : ''} onClick={handleOpen}> */}
         <div className={hover? classes.overlay : ''} onClick={handleOpen}>
           {
             hover?
@@ -38,7 +40,8 @@ const WorkCard = () => {
           }
         </div>
       </Card>
-      <Modal
+      <ImageModal open={open} handleClose={handleClose} img={Work1} />
+      {/* <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         className={classes.modal}
@@ -56,7 +59,7 @@ const WorkCard = () => {
             <p id="transition-modal-description">react-transition-group animates me.</p>
           </div>
         </Fade>
-      </Modal>
+      </Modal> */}
     </>
     );
   }
