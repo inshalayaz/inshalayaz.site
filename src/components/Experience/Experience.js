@@ -14,7 +14,7 @@ export default function Experience() {
     <div className={classes.root} id='experience'>
       <Grid container spacing={3} >
           <Grid item xs={12} sm={12}>
-            <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
+            <Typography variant="h3" id="experience-heading" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
                         Experience
             </Typography>
             </Grid>

@@ -1,10 +1,15 @@
 @media screen and (max-width: 768px){
+    #work{
+        padding-top: 90px;
+    }
     .work-text{
         text-align: center;
        /* margin: 0!important; */
+       padding-bottom: 50px;
     }
     .MuiTypography-alignLeft{
         text-align: center!important; 
         margin: 0!important;
     }
+    
 }

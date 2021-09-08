@@ -6,6 +6,7 @@ import useStyles from './Style'
 // import PenTesting from '../../assets/penetration-testing-2010805-1693936.png'
 import ServiceCard from './ServiceCard/ServiceCard'
 import Data  from './Data'
+import './style.css'
 
 function Services() {
     const classes = useStyles();
@@ -17,7 +18,7 @@ function Services() {
         <div className={classes.root} id='services' >
           <Grid container spacing={2}>
           <Grid item xs={12} sm={12}>
-            <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
+            <Typography variant="h3" id="services-heading" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
                         Services
             </Typography>
             </Grid>

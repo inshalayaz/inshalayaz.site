@@ -6,6 +6,7 @@ import Img from '../../assets/avatar-2.svg'
 import Chart from './Chart/Chart'
 import File from '../../assets/INSHAL CV UPDATED.pdf'
 import StatsCounter from './Counter/Counter'
+import './style.css'
 
 
 function About() {

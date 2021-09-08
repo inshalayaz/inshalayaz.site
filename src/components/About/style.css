@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px){
+    #about{
+        padding-top: 90px;
+    }
+    .MuiGrid-spacing-xs-2{
+        margin: 0!important;
+    }
+}
