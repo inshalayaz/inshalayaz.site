@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from './Style'
 import WorkCard from './WorkCard/WorkCard'
 import Data from './Data'
+import './style.css'
 
 const Works = () => {
     const classes = useStyles()
@@ -12,7 +13,7 @@ const Works = () => {
         <div id="work">
             <Grid container spacing={3} >
                 <Grid item xs={12} sm={12}>
-                <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
+                <Typography variant="h3" id="work-text" align='left' style={{ color:'#fff', margin:'150px 0px 50px 50px ' }} >
                             Work
                 </Typography>
                 </Grid>
