@@ -4,7 +4,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import useStyles from './Style'
 
-const ImageModal = ({open,handleClose, img}) => {
+const ImageModal = ({open,handleClose, Img}) => {
    
     const classes = useStyles()
     return (
@@ -21,9 +21,10 @@ const ImageModal = ({open,handleClose, img}) => {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
+          <div className={classes.paper} style={{ backgroundImage: `url(${Img})` }}>
+            {/* <h2 id="transition-modal-title">Transition modal</h2>
+            <p id="transition-modal-description">react-transition-group animates me.</p> */}
+            {/* <image className={classes.image} src={Img} /> */}
           </div>
         </Fade>
       </Modal>
