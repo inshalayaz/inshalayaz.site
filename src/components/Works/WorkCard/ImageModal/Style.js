@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2, 4, 3),
         height: '300px',
         width: '500px',
-        backgroundSize:"contain"
-
+        backgroundSize:"cover",
+        backgroundRepeat:'no-repeat'
       },
       image:{
           zIndex: 1,

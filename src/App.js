@@ -7,6 +7,7 @@ import Services from './components/Services/Services';
 import { useState } from 'react';
 import SideBar from './components/SideBar/SideBar'
 import Works from './components/Works/Works';
+import ClientReviews from './components/ClientReviews/ClientReviews'
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Services/>
       <Experience />
       <Works />
+      <ClientReviews />
     </div>
   );
 }

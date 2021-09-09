@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px){
+    .CarouselItem {
+        margin-top: 80px;
+    }
+    #cardRoot{
+        margin: 50px 0px!important;
+    }
+}
