@@ -18,7 +18,6 @@ const Works = () => {
                 </Typography>
                 </Grid>
                 <Grid container className={classes.root} spacing={2} align='center'>
-
                 {
                     Data.map( n => (
                         <Grid item xs={12} md={4}>

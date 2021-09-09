@@ -3,6 +3,7 @@ import RatingCarousel from './Carousel/Carousel'
 import { Grid, Typography} from '@material-ui/core';
 import useStyles from './Style'
 import './Style.css'
+import TechnologyIcons from './TechnologyIcons/TechnologyIcons';
 
 
 function ClientReviews() {
@@ -18,6 +19,9 @@ function ClientReviews() {
                 </Grid>
                 <Grid item xs={12}>
                     <RatingCarousel />
+                </Grid>
+                <Grid item xs={12}>
+                   <TechnologyIcons />
                 </Grid>
             </Grid>
       
