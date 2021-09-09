@@ -7,7 +7,7 @@ import './style.css'
 const ReviewCard = ({Description}) => {
     const classes = useStyles()
     return (
-          <Card className={classes.root} id="cardRoot" style={{backgroundColor: '#302f4e', borderRadius:'30px' ,margin:'20px 450px', padding:'20px 0px'}} >
+          <Card className={classes.root} id="cardRoot" style={{backgroundColor: '#302f4e', borderRadius:'30px', marginTop:'30px' , padding:'20px 0px'}} >
             <CardContent>
               <Typography className={classes.title} style={{color:'#fff'}} gutterBottom>
                 {Description}
