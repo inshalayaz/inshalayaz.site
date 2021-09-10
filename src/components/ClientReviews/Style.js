@@ -9,6 +9,12 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
       },
+      techIcons:{
+        marginBottom: '30px'
+      },
+      techDiv: {
+        marginTop: 50
+      }
 }))
 
 export default useStyles

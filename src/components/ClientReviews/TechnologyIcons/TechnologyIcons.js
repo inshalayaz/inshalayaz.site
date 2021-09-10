@@ -1,35 +1,9 @@
-import { Grid } from '@material-ui/core'
 import React from 'react'
-import Img1 from '../../../assets/slider1.svg'
 
-const TechnologyIcons = () => {
+const TechnologyIcons = ({Img,Alt, Key}) => {
     return (
-        <Grid container>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-            <Grid item md={3}>
-                <img src={Img1} alt="hi" />
-            </Grid>
-        </Grid>
+        <img src={Img} alt={Alt} key={Key}  />
+       
     )
 }
 

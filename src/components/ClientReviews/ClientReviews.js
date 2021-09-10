@@ -4,7 +4,7 @@ import { Grid, Typography} from '@material-ui/core';
 import useStyles from './Style'
 import './Style.css'
 import TechnologyIcons from './TechnologyIcons/TechnologyIcons';
-
+import Data from './TechnologyIcons/Data'
 
 function ClientReviews() {
     const classes = useStyles()
@@ -20,8 +20,17 @@ function ClientReviews() {
                 <Grid item xs={12}>
                     <RatingCarousel />
                 </Grid>
-                <Grid item xs={12}>
-                   <TechnologyIcons />
+                <Grid item xs={12} className={classes.techDiv} >
+                    
+                    <Grid container>        
+                        {
+                            Data.map((n)=>(
+                                <Grid item xs={3} className={classes.techIcons}>
+                                <   TechnologyIcons Img={n.Img.default} Alt={n.Alt} Key={n.id}  />
+                                </Grid>
+                            )
+                        )}
+                    </Grid>
                 </Grid>
             </Grid>
       
