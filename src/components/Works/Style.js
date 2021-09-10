@@ -6,8 +6,6 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       marginBottom: 100
     },
-    
-    
   }));
 
 export default useStyles

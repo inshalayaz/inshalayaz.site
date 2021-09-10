@@ -4,6 +4,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import useStyles from './Style';
 import ImageModal from './ImageModal/ImageModal';
+import './style.css'
 
 
 const WorkCard = ({ key, Img, Title }) => {
