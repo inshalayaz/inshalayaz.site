@@ -11,13 +11,13 @@ const Works = () => {
     const classes = useStyles()
     return (
         <div id="work">
-            <Grid container spacing={2} >
+            <Grid container spacing={2} className={classes.root} >
                 <Grid item xs={12} sm={12} >
                 <Typography variant="h3" id="work-text" align='left' style={{ color:'#fff', margin:'150px 0px 50px 50px ' }} >
                             Work
                 </Typography>
                 </Grid>
-                <Grid container className={classes.root} spacing={2} align='center'>
+                <Grid container spacing={2} align='center'>
                 {
                     Data.map( n => (
                         <Grid item xs={12} md={4}>
