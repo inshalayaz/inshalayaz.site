@@ -17,13 +17,8 @@ export default function CustomizedTimeline({year,work,desc,icon}) {
   const classes = useStyles();
 
   return (
-    <Timeline>
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" style={{color: '#fff'}}>
-            {year}
-          </Typography>
-        </TimelineOppositeContent>
+    <Timeline id="timeline-ul">
+      <TimelineItem className="timeline-item">
         <TimelineSeparator>
           <TimelineDot variant='outlined'>
             {icon ? <SchoolIcon color="secondary" /> : <WorkIcon color="secondary" />}
@@ -32,6 +27,9 @@ export default function CustomizedTimeline({year,work,desc,icon}) {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
+          <Typography variant="body2" style={{color: '#fff'}}>
+            {year}
+          </Typography>
             <Typography variant="h6" component="h1">
               {work}
             </Typography>

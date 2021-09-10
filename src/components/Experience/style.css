@@ -18,4 +18,14 @@
     .MuiGrid-spacing-xs-3{
         margin: 0!important;
     }
+    .MuiPaper-root.makeStyles-paper-18.MuiPaper-elevation3.MuiPaper-rounded{
+        padding: 16px 0px;
+    }
+    ul#timeline-ul {
+        width: 100%;
+        padding-right:240px
+    }
+    #experience{
+        margin-bottom: 0px;
+    }
 }

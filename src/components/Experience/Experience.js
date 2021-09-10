@@ -19,7 +19,7 @@ export default function Experience() {
             </Typography>
             </Grid>
         <Grid item xs={12} sm={6} md={6}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper} >
               {
                   Data1.map( n =>(
                     <CustomizedTimeline key={n.id} year={n.year} work={n.work} desc={n.desc} icon={n.icon}/>
@@ -28,7 +28,7 @@ export default function Experience() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper} >
           {
                   Data2.map( n =>(
                     <CustomizedTimeline key={n.id} year={n.year} work={n.work} desc={n.desc} icon={n.icon}/>
