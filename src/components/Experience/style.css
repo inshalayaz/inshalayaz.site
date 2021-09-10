@@ -1,6 +1,9 @@
 .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3{
     width:100%
 }
+.MuiTimelineItem-missingOppositeContent:before {
+    content: none!important;
+}
 @media screen and (max-width: 768px){
     .MuiPaper-root.makeStyles-paper-17.MuiPaper-elevation1.MuiPaper-rounded{
         box-shadow: none;
@@ -21,10 +24,10 @@
     .MuiPaper-root.makeStyles-paper-18.MuiPaper-elevation3.MuiPaper-rounded{
         padding: 16px 0px;
     }
-    ul#timeline-ul {
+    /* ul#timeline-ul {
         width: 100%;
         padding-right:240px
-    }
+    } */
     #experience{
         margin-bottom: 0px;
     }
