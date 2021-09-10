@@ -9,7 +9,7 @@ import SideBar from './components/SideBar/SideBar'
 import Works from './components/Works/Works';
 import ClientReviews from './components/ClientReviews/ClientReviews'
 import Contact from './components/Contact/Contact'
-
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,6 +28,7 @@ function App() {
       <Works />
       <ClientReviews />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -13,7 +13,7 @@ const Works = () => {
         <div id="work">
             <Grid container spacing={2} className={classes.root} >
                 <Grid item xs={12} sm={12} >
-                <Typography variant="h3" id="work-text" align='left' style={{ color:'#fff', margin:'150px 0px 50px 50px ' }} >
+                <Typography variant="h3" id="work-text" align='left' style={{ color:'#fff', margin:'100px 0px 50px 50px ' }} >
                             Work
                 </Typography>
                 </Grid>

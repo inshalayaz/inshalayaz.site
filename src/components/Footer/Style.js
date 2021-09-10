@@ -3,9 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme)=>({
     root: {
         flexGrow: 1,
-        // marginTop: '180px',
-        paddingTop: 120,
-        paddingBottom: 50
+        padding: '20px 0px',
+        backgroundColor: '#ffd15c'
       },
       paper: {
         padding: theme.spacing(2),

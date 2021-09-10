@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px){
     #services{
-        padding-top: 90px;
+        padding-top: 50px;
+        margin-top: 100px;
     }
     #services-heading{
         padding-bottom: 50px;
