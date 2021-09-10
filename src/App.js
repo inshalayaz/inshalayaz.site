@@ -8,7 +8,7 @@ import { useState } from 'react';
 import SideBar from './components/SideBar/SideBar'
 import Works from './components/Works/Works';
 import ClientReviews from './components/ClientReviews/ClientReviews'
-
+import Contact from './components/Contact/Contact'
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
       <Experience />
       <Works />
       <ClientReviews />
+      <Contact />
     </div>
   );
 }

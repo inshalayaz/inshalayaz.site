@@ -1,0 +1,9 @@
+.MuiOutlinedInput-root {
+    border-radius: 30px!important;
+}
+input#outlined-basic {
+    padding-left: 30px;
+}
+textarea#outlined-basic {
+    padding-left: 10px;
+}

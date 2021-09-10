@@ -21,7 +21,7 @@ const WorkCard = ({ key, Img, Title }) => {
     const classes = useStyles()
     return (
       <>
-        <Card className={classes.root} onMouseOver={()=> isHovered(!hover)} onMouseOut={()=> isHovered(!hover)} >
+        <Card className={classes.root} id="main-card" onMouseOver={()=> isHovered(!hover)} onMouseOut={()=> isHovered(!hover)} >
         {/* <CardActionArea> */}
           <CardMedia
             className={classes.media}
