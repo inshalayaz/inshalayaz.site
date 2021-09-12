@@ -2,7 +2,7 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
 const data = {
-  labels: ['React.js', 'Node.js', 'Pen Testing', 'WordPress', 'SEO', 'Linux'],
+  labels: ['React.js', 'Node.js', 'Pen Testing'],
   datasets: [
     {
       label: 'Out of 10',
