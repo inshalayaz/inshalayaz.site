@@ -10,7 +10,7 @@ import './style.css'
 
 function Services() {
     const classes = useStyles();
-    console.log(Data[1].bg)
+   
     
   
 

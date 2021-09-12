@@ -10,7 +10,7 @@ import ReviewCard from './ReviewCard/ReviewCard'
 const RatingCarousel = () => {
     // eslint-disable-next-line
 const classes = useStyles()
-    console.log(Data[0].Img.default)
+    
     return (
         <>
         

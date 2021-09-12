@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme)=>({
     root: {
         flexGrow: 1,
         // marginTop: '180px',
-        paddingTop: 120,
+        paddingTop: 30,
         paddingBottom: 50
       },
       paper: {

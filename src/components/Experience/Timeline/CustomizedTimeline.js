@@ -12,7 +12,7 @@ import useStyles from './Style'
 
 
 export default function CustomizedTimeline({year,work,desc,icon}) {
-  console.log(icon)
+  
   const classes = useStyles();
 
   return (
