@@ -12,11 +12,17 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: 'white',
       backgroundColor: "#353353",
-      boxShadow:'none'
+      boxShadow:'none',
+      height:'100%'
       
     },
     btn: {
-        marginTop: '20px'
+      marginTop: '20px'
+    },
+    aboutBg:{
+      backgroundColor: "#302f4e",      
+      overflow: 'none',
+      borderRadius: 30
     },
    
    
