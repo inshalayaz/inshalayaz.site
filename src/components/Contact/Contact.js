@@ -15,15 +15,15 @@ const Contact = () => {
                 </Typography>
             </Grid>
             <Grid container spacing={2}>
-                <Grid item xs={4} style={{color:"#fff"}}>
-                    <Typography variant="h5">
+                <Grid item xs={12} md={4} style={{color:"#fff"}} id="text-container" >
+                    <Typography variant="h5" >
                         Let's talk about everything!
                     </Typography>
                     <Typography variant="body1">
                         Don't like forms? Send me an <a id="email" href="mailto:inshal.ayaz14@gmail.com">email</a>. 👋
                     </Typography>
                 </Grid>
-                <Grid item xs={8}>
+                <Grid item xs={12} md={8} id="contact-form">
                         <ContactForm />
                 </Grid>
             </Grid>

@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme)=>({
     root: {
         flexGrow: 1,
         padding: '20px 0px',
-        backgroundColor: '#ffd15c'
+        backgroundColor: '#2b3044'
       },
       paper: {
         padding: theme.spacing(2),

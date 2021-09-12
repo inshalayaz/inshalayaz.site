@@ -4,3 +4,16 @@
 #contact-heading{
     margin:80px 0px 50px 50px!important
 }
+
+@media screen and (max-width: 768px){
+    #text-container{
+        text-align: left;
+    }
+    #text-container h5{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #contact-form{
+        margin-top: 50px;
+    }
+}

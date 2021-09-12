@@ -43,7 +43,7 @@ const ContactForm = () => {
                                 <TextField className={classes.formField} required type="text" onChange={handleChange} name="subject" id="outlined-basic" placeholder="Subject" variant="outlined" />
                             </Grid>
                             <Grid item xs={12} md={12}>
-                                <TextField multiline={true} minRows={8} type="text" required onChange={handleChange} name="message" className={classes.formField} id="outlined-basic" placeholder="<essage" variant="outlined" />
+                                <TextField multiline={true} minRows={8} type="text" required onChange={handleChange} name="message" className={classes.formField} id="outlined-basic" placeholder="Message" variant="outlined" />
                             </Grid>
                             <Grid item xs={6} md={3} >
                             <Button
