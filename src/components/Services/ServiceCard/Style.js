@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardbg:{
       padding: '30px 40px',
-      margin: '30px 80px' ,
+      margin: '30px 40px' ,
       color: "white",
       // height: '200px',
       marginBottom: '30px',

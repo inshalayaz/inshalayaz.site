@@ -14,8 +14,8 @@ const Data = [
         Alt: "Penetrating Testing",
         Title: " Penetrating Testing",
         Description: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-        BgColor:'#fcbf0d',
-        textColor:'#454360'
+        BgColor:'#f9d74c',
+        textColor:'#fefcf9'
     },
     {
         key: 3,
@@ -23,7 +23,7 @@ const Data = [
         Alt: "SEO",
         Title: "The SEO Expert",
         Description: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-        BgColor:'#f92c60',
+        BgColor:'#f97b8b',
         textColor:'#fff'
     },
 ]
