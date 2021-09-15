@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import {Grid, TextField,Button} from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
+import emailjs from 'emailjs-com';
 
 
 import useStyles from './Style';
 import './style.css'
 
 
-const ContactForm = () => {
+const ContactForm = ({status,setStatus}) => {
     const classes = useStyles()
     const [contactValue, setContactValue] = useState({
         username: "",
@@ -23,8 +24,16 @@ const ContactForm = () => {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(contactValue)
+         e.preventDefault();
+        emailjs.sendForm('service_g9sb9o1', 'template_e3vhl43', e.target, 'user_cPbPw4vP1zDW3ZF5FAERU')
+        .then((result) => {
+            setStatus(!status)
+            console.log(status)
+            console.log(result);
+            
+        }, (error) => {
+            console.log(error.text);
+        });
         
     }
 
@@ -34,10 +43,10 @@ const ContactForm = () => {
                     <form  autoComplete="off" onSubmit={handleSubmit} >
                         <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
-                                <TextField className={classes.formField} type="text" required onChange={handleChange} name="username" id="outlined-basic" placeholder="Your Name" variant="outlined" />
+                                <TextField className={classes.formField} type="text" required onChange={handleChange} name="user_name" id="outlined-basic" placeholder="Your Name" variant="outlined" />
                             </Grid>
                             <Grid item xs={12} md={6}>
-                                <TextField className={classes.formField} type="email" required onChange={handleChange} name="email" id="outlined-basic" placeholder="Email address" variant="outlined" />
+                                <TextField className={classes.formField} type="email" required onChange={handleChange} name="user_email" id="outlined-basic" placeholder="Email address" variant="outlined" />
                             </Grid>
                             <Grid item xs={12} md={12}>
                                 <TextField className={classes.formField} required type="text" onChange={handleChange} name="subject" id="outlined-basic" placeholder="Subject" variant="outlined" />

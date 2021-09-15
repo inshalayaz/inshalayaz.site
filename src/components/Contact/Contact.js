@@ -1,11 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './style.css'
 import useStyles from './Style';
 import { Grid,Typography } from '@material-ui/core'
 import ContactForm from './ContactForm/ContactForm'
+import Thanks from './Thanks/Thanks'
 
 const Contact = () => {
     const classes = useStyles();
+    const [status,setStatus] = useState(false)
 
     return (
         <div className={classes.root} id="contact">
@@ -24,7 +26,10 @@ const Contact = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={8} id="contact-form">
-                        <ContactForm />
+                {status? <Thanks status={status} setStatus={setStatus} /> 
+                    : 
+                        <ContactForm status={status} setStatus={setStatus} />
+                 }
                 </Grid>
             </Grid>
         </div>
