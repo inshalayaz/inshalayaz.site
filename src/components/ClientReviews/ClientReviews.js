@@ -25,7 +25,7 @@ function ClientReviews() {
                     <Grid container>        
                         {
                             Data.map((n)=>(
-                                <Grid item xs={3} className={classes.techIcons}>
+                                <Grid item xs={3} className={classes.techIcons} key={n.id} >
                                 <   TechnologyIcons Img={n.Img.default} Alt={n.Alt} Key={n.id}  />
                                 </Grid>
                             )

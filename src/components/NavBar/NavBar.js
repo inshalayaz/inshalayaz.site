@@ -7,7 +7,7 @@ import { AppContext } from '../../context/AppContext';
 
 const Navbar = ({ toggle }) => {
     
-    const {scrollNav,setScrollNav} = useContext(AppContext)
+    const {scrollnav,setScrollNav} = useContext(AppContext)
     const changeNav = () => {
         if(window.scrollY >= 80){
             setScrollNav(true)
@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
-            <Nav scrollNav={scrollNav}>
+            <Nav scrollnav={scrollnav}>
                 <NavbarContainer>
                     <NavLogo to='/' >
                         <img src={Logo} alt="Logo" style={{height: "70px", borderRadius:"50%" }}/>
@@ -34,16 +34,16 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to="home" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav} >Home</NavLinks>
+                                <NavLinks to="home" smooth={true} duration={500} spy={true} exact="true" scrollnav={scrollnav} >Home</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav} >About</NavLinks>
+                                <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" scrollnav={scrollnav} >About</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav}>Services</NavLinks>
+                                <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true" scrollnav={scrollnav}>Services</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="experience" smooth={true} duration={500} spy={true} exact="true" scrollNav={scrollNav}>Experience</NavLinks>
+                                <NavLinks to="experience" smooth={true} duration={500} spy={true} exact="true" scrollnav={scrollnav}>Experience</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="work" smooth={true} duration={500} spy={true} exact="true">Work</NavLinks>

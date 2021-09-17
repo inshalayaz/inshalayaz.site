@@ -9,12 +9,12 @@ const ServiceCard = ({Img,Alt,Title,Description,BgColor,textColor}) => {
 
     return (
         <Grid item xs={12} sm={4} id="service-card">
-            <Paper className={[ classes.paper,classes.cardbg ]} style={{background: BgColor  , color: textColor}}>
+            <Paper className={classes.paper} id="card-bg" style={{background: BgColor  , color: textColor}}>
                 <img src={Img} alt={Alt} height="100px" />
                 <Typography variant='h4' className={classes.title}>
                     {Title}
                 </Typography>
-                <Typography variant='p' className={classes.txt} >
+                <Typography variant='body1' className={classes.txt} >
                   {Description}
                 </Typography>
               </Paper>

@@ -15,7 +15,7 @@ function About() {
         <div className={classes.root} id="about" >
         <Grid container spacing={2} >
             <Grid item xs={12} sm={12}>
-            <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px ' }} >
+            <Typography variant="h3" align='left' style={{ color:'#fff', margin:'80px 0px 50px 50px' }} >
                         About Me
             </Typography>
             </Grid>
@@ -30,7 +30,7 @@ function About() {
                 {/* Internal Grid For two sections within it */}
                 <Grid container spacing={2} className={classes.aboutBg} >
                     <Grid item xs={12} sm={6}>
-                        <Paper className={[classes.paper,classes.aboutBg]}>
+                        <Paper className={classes.paper} style={{ backgroundColor: "#302f4e",overflow: 'none',borderRadius: 30}} >
                                 <Typography variant='body1' align="left" >
                                 I am Inshal Ayaz, web developer from Karachi, Pakistan. I have rich experience in web site design and building and customization, also I am good at WordPress and Web Penetration Testing.
                                 </Typography>
@@ -44,7 +44,7 @@ function About() {
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} >
-                        <Paper className={[classes.paper,classes.aboutBg]}>
+                        <Paper className={classes.paper}  style={{ backgroundColor: "#302f4e",overflow: 'none',borderRadius: 30}}>
                             <Chart />
                         </Paper>
                     </Grid>

@@ -20,8 +20,8 @@ const Works = () => {
                 <Grid container spacing={2} align='center'>
                 {
                     Data.map( n => (
-                        <Grid item xs={6} md={4} >
-                            <WorkCard key={n.key} className={classes.card} Img={n.Img.default} Title={n.Title}  />
+                        <Grid item xs={6} md={4} key={n.key} >
+                            <WorkCard className={classes.card} Img={n.Img.default} Title={n.Title}  />
                         </Grid>
                     ))
                 }

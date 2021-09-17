@@ -1,5 +1,6 @@
 const Data = [
     {
+        id:1,
         name: "Random Name #1",
         designation: "CEO At No where",
         description: "Probably the most random thing you have ever seen!",
@@ -7,12 +8,14 @@ const Data = [
         
     },
     {
+        id:2,
         name: "Random Name #2",
         designation: "CEO At No where",
         description: "Hello World!",
         Img: require('../../../assets/slider2.svg'),
     },
     {
+        id:3,
         name: "Random Name #3",
         designation: "CEO At No where",
         description: "Hello Cube",

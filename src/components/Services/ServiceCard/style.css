@@ -2,4 +2,14 @@
    #service-card{
     margin: 50px;
    }
+   #card-bg{
+      margin: '0px 0px';
+      padding: '40px 30px',
+   }
+}
+#card-bg{
+   padding: '30px 40px';
+   margin: '30px 40px' ;
+   color: "white";
+   margin-bottom: '30px';
 }

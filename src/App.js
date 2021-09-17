@@ -10,7 +10,7 @@ function App() {
   const [scrollNav, setScrollNav] = useState(false)
 
   return (
-    <div class="App">
+    <div className="App">
       <AppContext.Provider value={{status,setStatus,scrollNav,setScrollNav}} >  
         <Router>
           <Switch>

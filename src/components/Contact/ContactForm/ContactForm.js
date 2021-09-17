@@ -63,15 +63,13 @@ const ContactForm = () => {
                                 fullWidth={true}
                                 variant="contained"
                                 color="secondary"
-                                className={[classes.button]}
+                                className={classes.button}
                                 endIcon={<Icon>send</Icon>}
                                 >
                                 Send
                             </Button>                               
                             </Grid>
-                            {/* <Grid item xs={12}>
-                                <TextField multiline={true} minRows={8} maxRows={10} className={classes.formField} id="outlined-basic" placeholder="Subject" variant="message" />
-                            </Grid> */}
+                            
                         </Grid>
                     </form>
         </div>
