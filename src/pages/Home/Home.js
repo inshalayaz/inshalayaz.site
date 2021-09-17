@@ -6,9 +6,9 @@ import Services from '../../components/Services/Services';
 import { useState } from 'react';
 import SideBar from '../../components/SideBar/SideBar'
 import Works from '../../components/Works/Works';
-import ClientReviews from '../../components/ClientReviews/ClientReviews'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
+import ClientReviews from '../../components/ClientReviews/ClientReviews'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
