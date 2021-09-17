@@ -1,14 +1,15 @@
-import React,{useState} from 'react'
+import React, {useContext} from 'react'
 import './style.css'
 import useStyles from './Style';
 import { Grid,Typography } from '@material-ui/core'
 import ContactForm from './ContactForm/ContactForm'
 import Thanks from './Thanks/Thanks'
+import { AppContext } from '../../context/AppContext';
 
 const Contact = () => {
     const classes = useStyles();
-    const [status,setStatus] = useState(false)
-
+    // const [status,setStatus] = useState(false)
+    const {status,setStatus} = useContext(AppContext)
     return (
         <div className={classes.root} id="contact">
             <Grid item xs={12} sm={12}>

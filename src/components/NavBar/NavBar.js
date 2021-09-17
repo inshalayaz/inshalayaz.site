@@ -1,14 +1,13 @@
-import React, { useEffect, useState} from 'react'
+import React, { useContext, useEffect} from 'react'
 import {Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem,NavLinks } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import Logo from '../../assets/My Picture.JPG'
-
+import { AppContext } from '../../context/AppContext';
 
 
 const Navbar = ({ toggle }) => {
-
-    const [scrollNav, setScrollNav] = useState(false)
-
+    
+    const {scrollNav,setScrollNav} = useContext(AppContext)
     const changeNav = () => {
         if(window.scrollY >= 80){
             setScrollNav(true)
@@ -20,6 +19,7 @@ const Navbar = ({ toggle }) => {
    useEffect(()=>{
        window.addEventListener('scroll', changeNav)
     changeNav()
+    // eslint-disable-next-line
    },[])
 
     return (

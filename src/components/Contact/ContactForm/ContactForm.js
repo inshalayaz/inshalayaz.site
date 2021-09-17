@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {Grid, TextField,Button} from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
 import emailjs from 'emailjs-com';
-
+import { AppContext } from '../../../context/AppContext';
 
 import useStyles from './Style';
 import './style.css'
 
 
-const ContactForm = ({status,setStatus}) => {
+const ContactForm = () => {
+
+    const {status,setStatus} = useContext(AppContext)
+
     const classes = useStyles()
     const [contactValue, setContactValue] = useState({
         username: "",

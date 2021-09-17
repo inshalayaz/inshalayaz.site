@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Typography,Button } from '@material-ui/core'
+import { AppContext } from '../../../context/AppContext'
+const Thanks = () => {
 
-const Thanks = ({status, setStatus}) => {
+    const {status,setStatus} = useContext(AppContext)
 
     const handleClick = () => {
         setStatus(!status)
