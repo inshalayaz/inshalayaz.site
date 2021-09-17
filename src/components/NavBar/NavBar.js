@@ -1,5 +1,5 @@
 import React, { useContext, useEffect} from 'react'
-import {Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem,NavLinks } from './NavbarElements'
+import {Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem,NavLinks,NavLinkR } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import Logo from '../../assets/My Picture.JPG'
 import { AppContext } from '../../context/AppContext';
@@ -50,6 +50,9 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="contact" smooth={true} duration={500} spy={true} exact="true">Contact</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinkR to="admin" smooth={true} duration={500} spy={true} exact="true">Login</NavLinkR>
                             </NavItem>
                         </NavMenu>
                        

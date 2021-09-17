@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-
+import { Link as LinkR} from 'react-router-dom'
 
 function Copyright(props) {
   return (
@@ -95,15 +95,17 @@ export default function SignIn() {
               Sign In
             </Button>
             <Grid container style={{margin:'10px 0'}} >
-              <Grid item xs>
+              <Grid item xs md={6}>
                 <Link href="#" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>
-              <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+              <Grid item xs md={6} >
+                <LinkR to="/" >
+                  <Link variant="body2">
+                    Go Back Home
+                  </Link>
+                </LinkR>
               </Grid>
             </Grid>
           </Box>

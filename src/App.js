@@ -1,8 +1,6 @@
 import './App.css';
 import React,{ Suspense, useState } from 'react';
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
-// import Home from './pages/Home/Home';
-// import Login from './pages/Login/Login';
+import {  BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
 import {AppContext} from './context/AppContext';
 import Loading from './components/Loading/Loading'
 const Home = React.lazy(()=> import('./pages/Home/Home') )
