@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { Link as LinkR} from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Axios from 'axios'
 
 
@@ -42,6 +44,27 @@ export default function Register() {
       password: data.get('password')
     }).then((response)=>{
       console.log(response)
+      if(!response.data.err){
+        toast.success('Registered Successfully!', {
+          position: "bottom-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
+      }else{
+        toast.error(`${response.data.err}`, {
+          position: "bottom-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
+      }
     })
   };
 
@@ -121,6 +144,17 @@ export default function Register() {
             </Grid>
           </Box>
         </Box>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          />
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>

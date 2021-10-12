@@ -10,10 +10,11 @@ const Login = React.lazy(()=> import('./pages/Login/Login') )
 function App() {
   const [status,setStatus] = useState(false)
   const [scrollNav, setScrollNav] = useState(false)
+  const [loginStatus, setLoginStatus] = useState()
 
   return (
     <div className="App">
-      <AppContext.Provider value={{status,setStatus,scrollNav,setScrollNav}} >  
+      <AppContext.Provider value={{status,setStatus,scrollNav,setScrollNav,loginStatus,setLoginStatus}} >  
         <Router>
           <Suspense fallback={<Loading />}>
             <Switch>

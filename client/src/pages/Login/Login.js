@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -13,7 +13,11 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { Link as LinkR} from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Axios from 'axios'
+import { AppContext } from '../../context/AppContext';
 
 
 function Copyright(props) {
@@ -33,10 +37,11 @@ const theme = createTheme();
 
 export default function SignIn() {
 
+  const { loginStatus, setLoginStatus } = useContext(AppContext)
   Axios.defaults.withCredentials =  true
 
-  const [loginStatus, setLoginStatus] = useState()
 
+console.log(loginStatus)
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -52,11 +57,29 @@ export default function SignIn() {
         'Access-Control-Allow-Credentials':true
       }
     }).then((response)=>{
-      
+        console.log(response)
       if(response.data.message){
         setLoginStatus(response.data.message)
+        toast.error( `${response.data.message}`, {
+          position: "bottom-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       }else{
         setLoginStatus(response.data[0].username)
+        toast.success('Logged In Successfully!', {
+          position: "bottom-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       }
 
 
@@ -66,11 +89,13 @@ export default function SignIn() {
 
   useEffect(()=>{
     Axios.get('http://localhost:3001/login').then((res)=>{
-    console.log(res)
+      if(res.data.loggedIn === true)
+        setLoginStatus(res.data.user[0].username)
     })
-
+// eslint-disable-next-line
   },[])
 
+  
 
   return (
     <ThemeProvider theme={theme}>
@@ -143,6 +168,17 @@ export default function SignIn() {
             </Grid>
           </Box>
         </Box>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
